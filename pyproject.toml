@@ -1,0 +1,25 @@
+[project]
+name = "codex-dspy"
+version = "0.1.0"
+description = "DSPy module for OpenAI Codex SDK - signature-driven agentic workflows"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dspy>=3.0.3",
+    "openai-codex-sdk @ git+https://github.com/darinkishore/codex.git#subdirectory=sdk/python",
+]
+authors = [
+    { name = "Darin Kishore" }
+]
+keywords = ["dspy", "codex", "agents", "llm", "openai"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+Homepage = "https://github.com/darinkishore/codex_dspy"
+Repository = "https://github.com/darinkishore/codex_dspy"
+Documentation = "https://github.com/darinkishore/codex_dspy#readme"
