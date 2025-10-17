@@ -409,25 +409,25 @@ When accessing `result.trace`, you'll see various item types:
 
 ## How It Works
 
-### Signature ’ Codex Flow
+### Signature Â’ Codex Flow
 
 ```
 1. Define signature: 'message:str -> answer:str'
-   “
+   Â“
 2. CodexAgent validates (must have 1 input, 1 output)
-   “
+   Â“
 3. __init__ creates Codex client + starts thread
-   “
+   Â“
 4. forward(message="...") extracts message
-   “
-5. If output field has desc ’ append to message
-   “
-6. If output type ` str ’ generate JSON schema
-   “
+   Â“
+5. If output field has desc Â’ append to message
+   Â“
+6. If output type ` str Â’ generate JSON schema
+   Â“
 7. Call thread.run(message, schema)
-   “
+   Â“
 8. Parse response (JSON if Pydantic, str otherwise)
-   “
+   Â“
 9. Return Prediction(output=..., trace=..., usage=...)
 ```
 
@@ -511,7 +511,7 @@ result = agent(message=message)
 
 ### Why stateful threads?
 
-Agents often need multi-turn context (e.g., "fix the bug" ’ "write tests for it"). Stateful threads make this natural without manual history management.
+Agents often need multi-turn context (e.g., "fix the bug" Â’ "write tests for it"). Stateful threads make this natural without manual history management.
 
 Want fresh context? Create a new agent instance.
 
@@ -528,6 +528,9 @@ The trace provides full visibility into agent execution.
 ## Contributing
 
 Issues and PRs welcome! This is an experimental integration of Codex SDK with DSPy.
+
+## Roadmap
+- proper signature inputfield handling (maybe outputfields if we can swing it?)
 
 ## License
 
