@@ -11,7 +11,7 @@ def main():
     print()
     print("Quick start:")
     print("  import dspy")
-    print("  from codex_agent import CodexAgent")
+    print("  from codex_dspy import CodexAgent")
     print()
     print("  sig = dspy.Signature('message:str -> answer:str')")
     print("  agent = CodexAgent(sig, working_directory='.')")

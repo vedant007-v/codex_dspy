@@ -240,17 +240,13 @@ wheels = [
 [[package]]
 name = "codex-dspy"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "dspy" },
-    { name = "openai-codex-sdk" },
 ]
 
 [package.metadata]
-requires-dist = [
-    { name = "dspy", editable = "../dspy" },
-    { name = "openai-codex-sdk", editable = "../../shit/codex/sdk/python" },
-]
+requires-dist = [{ name = "dspy", specifier = ">=3.0.3" }]
 
 [[package]]
 name = "colorama"
@@ -294,7 +290,7 @@ wheels = [
 [[package]]
 name = "dspy"
 version = "3.0.4b1"
-source = { editable = "../dspy" }
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
     { name = "asyncer" },
@@ -320,53 +316,10 @@ dependencies = [
     { name = "tqdm" },
     { name = "xxhash" },
 ]
-
-[package.metadata]
-requires-dist = [
-    { name = "anthropic", marker = "extra == 'anthropic'", specifier = ">=0.18.0,<1.0.0" },
-    { name = "anyio" },
-    { name = "asyncer", specifier = "==0.0.8" },
-    { name = "backoff", specifier = ">=2.2" },
-    { name = "build", marker = "extra == 'dev'", specifier = ">=1.0.3" },
-    { name = "cachetools", specifier = ">=5.5.0" },
-    { name = "cloudpickle", specifier = ">=3.0.0" },
-    { name = "datamodel-code-generator", marker = "extra == 'dev'", specifier = ">=0.26.3" },
-    { name = "datasets", marker = "extra == 'test-extras'", specifier = ">=2.14.6" },
-    { name = "diskcache", specifier = ">=5.6.0" },
-    { name = "gepa", extras = ["dspy"], specifier = "==0.0.17" },
-    { name = "joblib", specifier = "~=1.3" },
-    { name = "json-repair", specifier = ">=0.30.0" },
-    { name = "langchain-core", marker = "extra == 'langchain'" },
-    { name = "langchain-core", marker = "extra == 'test-extras'" },
-    { name = "litellm", specifier = ">=1.64.0" },
-    { name = "litellm", marker = "sys_platform == 'win32' and extra == 'dev'", specifier = ">=1.64.0" },
-    { name = "litellm", extras = ["proxy"], marker = "sys_platform != 'win32' and extra == 'dev'", specifier = ">=1.64.0" },
-    { name = "magicattr", specifier = ">=0.1.6" },
-    { name = "mcp", marker = "python_full_version >= '3.10' and extra == 'mcp'" },
-    { name = "mcp", marker = "python_full_version >= '3.10' and extra == 'test-extras'" },
-    { name = "numpy", specifier = ">=1.26.0" },
-    { name = "openai", specifier = ">=0.28.1" },
-    { name = "optuna", specifier = ">=3.4.0" },
-    { name = "optuna", marker = "extra == 'test-extras'", specifier = ">=3.4.0" },
-    { name = "orjson", specifier = ">=3.9.0" },
-    { name = "pandas", marker = "extra == 'test-extras'", specifier = ">=2.1.1" },
-    { name = "pillow", specifier = ">=10.1.0" },
-    { name = "pillow", marker = "extra == 'dev'", specifier = ">=10.1.0" },
-    { name = "pre-commit", marker = "extra == 'dev'", specifier = ">=3.7.0" },
-    { name = "pydantic", specifier = ">=2.0" },
-    { name = "pytest", marker = "extra == 'dev'", specifier = ">=6.2.5" },
-    { name = "pytest-asyncio", marker = "extra == 'dev'", specifier = ">=0.26.0" },
-    { name = "pytest-mock", marker = "extra == 'dev'", specifier = ">=3.12.0" },
-    { name = "regex", specifier = ">=2023.10.3" },
-    { name = "requests", specifier = ">=2.31.0" },
-    { name = "rich", specifier = ">=13.7.1" },
-    { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.3.0" },
-    { name = "tenacity", specifier = ">=8.2.3" },
-    { name = "tqdm", specifier = ">=4.66.1" },
-    { name = "weaviate-client", marker = "extra == 'weaviate'", specifier = "~=4.5.4" },
-    { name = "xxhash", specifier = ">=3.5.0" },
+sdist = { url = "https://files.pythonhosted.org/packages/5c/0f/e55abd1882157eac71187916a12ca9c982b04d619419637c86503f24cb9c/dspy-3.0.4b1.tar.gz", hash = "sha256:59db279cabe5d05cf4be8181508d93fa5407738aaa12a8a6714978ac8406f888", size = 230873, upload-time = "2025-09-29T10:51:11.578Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/9e/b2/039c2b96d877aa8604c6b0e5eac09f35bcbb5349ae777f65d6dfe9ff52fb/dspy-3.0.4b1-py3-none-any.whl", hash = "sha256:f099df9c408cd922deea863461cbaef5c5b33b196cb5068d000ab01484207c8d", size = 279632, upload-time = "2025-09-29T10:51:09.985Z" },
 ]
-provides-extras = ["anthropic", "weaviate", "mcp", "langchain", "dev", "test-extras"]
 
 [[package]]
 name = "fastuuid"
@@ -963,20 +916,6 @@ sdist = { url = "https://files.pythonhosted.org/packages/de/90/8f26554d24d63ed4f
 wheels = [
     { url = "https://files.pythonhosted.org/packages/9c/5b/4be258ff072ed8ee15f6bfd8d5a1a4618aa4704b127c0c5959212ad177d6/openai-2.3.0-py3-none-any.whl", hash = "sha256:a7aa83be6f7b0ab2e4d4d7bcaf36e3d790874c0167380c5d0afd0ed99a86bd7b", size = 999768, upload-time = "2025-10-10T01:12:48.647Z" },
 ]
-
-[[package]]
-name = "openai-codex-sdk"
-version = "0.0.1a0"
-source = { editable = "../../shit/codex/sdk/python" }
-
-[package.metadata]
-requires-dist = [
-    { name = "mypy", marker = "extra == 'dev'", specifier = ">=1.18" },
-    { name = "pydantic", marker = "extra == 'dev'", specifier = ">=2.7" },
-    { name = "pytest", marker = "extra == 'dev'", specifier = ">=8.4" },
-    { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.5" },
-]
-provides-extras = ["dev"]
 
 [[package]]
 name = "optuna"

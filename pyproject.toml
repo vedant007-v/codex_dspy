@@ -1,3 +1,7 @@
+[build-system]
+requires = ["uv_build>=0.9.5,<0.10.0"]
+build-backend = "uv_build"
+
 [project]
 name = "codex-dspy"
 version = "0.1.0"
@@ -6,7 +10,6 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "dspy>=3.0.3",
-    "openai-codex-sdk @ git+https://github.com/darinkishore/codex.git#subdirectory=sdk/python",
 ]
 authors = [
     { name = "Darin Kishore" }
@@ -23,3 +26,8 @@ classifiers = [
 Homepage = "https://github.com/darinkishore/codex_dspy"
 Repository = "https://github.com/darinkishore/codex_dspy"
 Documentation = "https://github.com/darinkishore/codex_dspy#readme"
+
+[tool.uv.build-backend]
+# Include both the codex SDK and codex_dspy wrapper
+module-root = "src"
+module-name = ["codex", "codex_dspy"]

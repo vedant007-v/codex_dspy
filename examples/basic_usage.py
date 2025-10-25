@@ -5,7 +5,7 @@ from pydantic import BaseModel, Field
 import dspy
 from codex import SandboxMode
 
-from codex_agent import CodexAgent
+from codex_dspy import CodexAgent
 
 
 def example_1_string_output():

@@ -146,9 +146,10 @@ class CodexAgent(dspy.Module):
         # 1. Extract input message
         message = kwargs[self.input_field]
 
-        # 2. Append output field description if present
+        # 2. Append output field description if present (skip DSPy's default ${field_name} placeholder)
         output_desc = (self.output_field_info.json_schema_extra or {}).get("desc")
-        if output_desc:
+        # Skip if desc is just DSPy's default placeholder (e.g., "${answer}" for field named "answer")
+        if output_desc and output_desc != f"${{{self.output_field}}}":
             message = f"{message}\n\nPlease produce the following output: {output_desc}"
 
         # 3. Build TurnOptions if output type is not str
